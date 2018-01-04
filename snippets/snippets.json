@@ -1,0 +1,222 @@
+{
+  "Vaadin Button": {
+    "prefix": "vaadin-button",
+    "body": [
+      "<vaadin-button>$0</vaadin-button>"
+    ],
+    "description": "Vaadin Button"
+  },
+  "Vaadin Checkbox": {
+    "prefix": "vaadin-checkbox",
+    "body": [
+      "<vaadin-checkbox ${1:checked}>${0:Label}</vaadin-checkbox>"
+    ],
+    "description": "Vaadin Checkbox"
+  },
+  "Vaadin ComboBox basic": {
+    "prefix": "vaadin-combo-box",
+    "body": [
+      "<vaadin-combo-box label=\"$1\" items=\"$2\"></vaadin-combo-box>",
+      "$0"
+    ],
+    "description": "Vaadin ComboBox basic"
+  },
+  "Vaadin ComboBox with object items": {
+    "prefix": "vaadin-combo-box-object",
+    "body": [
+      "<vaadin-combo-box label=\"$1\" item-label-path=\"${2:name}\" item-value-path=\"${3:symbol}\"></vaadin-combo-box>",
+      "$0"
+    ],
+    "description": "Vaadin ComboBox with object items"
+  },
+  "Vaadin ComboBox with item template": {
+    "prefix": "vaadin-combo-box-template",
+    "body": [
+      "<vaadin-combo-box label=\"$1\" item-label-path=\"${2:name}\" item-value-path=\"${3:symbol}\">",
+      "  <template>",
+      "    ${0:[[index]] <b>[[item.name]], <sub>[[item.number]]</sub>[[item.symbol]]</b>}",
+      "  </template>",
+      "</vaadin-combo-box>",
+      ""
+    ],
+    "description": "Vaadin ComboBox with item template"
+  },
+  "Vaadin Context Menu": {
+    "prefix": "vaadin-context-menu",
+    "body": [
+      "<vaadin-context-menu>",
+      "  <template>",
+      "    <vaadin-list-box>",
+      "      <vaadin-item>${1:First menu item}</vaadin-item>",
+      "      <vaadin-item>${2:Second menu item}</vaadin-item>",
+      "    </vaadin-list-box>",
+      "  </template>",
+      "  <p>${0:Content that triggers menu}</p>",
+      "</vaadin-context-menu>"
+    ],
+    "description": "Vaadin Context Menu"
+  },
+  "Vaadin Date Picker": {
+    "prefix": "vaadin-date-picker",
+    "body": [
+      "<vaadin-date-picker label=\"$1\" placeholder=\"$2\" value=\"$3\"></vaadin-date-picker>",
+      "$0"
+    ],
+    "description": "Vaadin Date Picker"
+  },
+  "Vaadin Dialog": {
+    "prefix": "vaadin-dialog",
+    "body": [
+      "<vaadin-dialog opened=\"[[$1]]\" ${2:no-close-on-esc} ${3:no-close-on-outside-click}>",
+      "  <template>",
+      "    $0",
+      "  </template>",
+      "</vaadin-dialog>"
+    ],
+    "description": "Vaadin Dialog"
+  },
+  "Vaadin Form Layout": {
+    "prefix": "vaadin-form-layout",
+    "body": [
+      "<vaadin-form-layout>",
+      "  $0",
+      "</vaadin-form-layout"
+    ],
+    "description": "Vaadin Form Layout"
+  },
+  "Vaadin Form Item": {
+    "prefix": "vaadin-form-item",
+    "body": [
+      "<vaadin-form-item>",
+      "  <label slot=\"label\">$1</label>",
+      "  <input class=\"full-width\" value=\"$0\">",
+      "</vaadin-form-item>"
+    ],
+    "description": "Vaadin Form Item"
+  },
+  "Vaadin Grid": {
+    "prefix": "vaadin-grid",
+    "body": [
+      "<vaadin-grid items=\"[[$1]]\">",
+      "  $0",
+      "</vaadin-grid>"
+    ],
+    "description": "Vaadin Grid"
+  },
+  "Vaadin Grid Column": {
+    "prefix": "vaadin-grid-column",
+    "body": [
+      "<vaadin-grid-column>",
+      "  <template class=\"header\">$1</template>",
+      "  <template>$2</template>",
+      "  <template class=\"footer\">$3</template>",
+      "</vaadin-grid-column>"
+    ],
+    "description": "Vaadin Grid Column"
+  },
+  "Vaadin ListBox": {
+    "prefix": "vaadin-list-box",
+    "body": [
+      "<vaadin-list-box>",
+      "  <vaadin-item>$0</vaadin-item>",
+      "</vaadin-list-box>"
+    ],
+    "description": "Vaadin ListBox"
+  },
+  "Vaadin Item": {
+    "prefix": "vaadin-item",
+    "body": [
+      "<vaadin-item>$0</vaadin-item>"
+    ],
+    "description": "Vaadin Item"
+  },
+  "Vaadin Notification": {
+    "prefix": "vaadin-notification",
+    "body": [
+      "<vaadin-notification opened=\"[[$1]]\" duration=\"${2:4000}\" position=\"${3|top-end,top-start,top-center,top-end,middle,bottom-start,bottom-center,bottom-end,bottom-stretch|}\">",
+      "  <template>$0</template>",
+      "</vaadin-notification>"
+    ],
+    "description": "Vaadin Notification"
+  },
+  "Vaadin Progress Bar": {
+    "prefix": "vaadin-progress-bar",
+    "body": [
+      "<vaadin-progress-bar value=\"${1:0.3}\"></vaadin-progress-bar>"
+    ],
+    "description": "Vaadin Progress Bar"
+  },
+  "Vaadin Radio Button": {
+    "prefix": "vaadin-radio-button",
+    "body": [
+      "<vaadin-radio-button value=\"$1\" ${2:disabled}>$0</vaadin-radio-button>"
+    ],
+    "description": "Vaadin Radio Button"
+  },
+  "Vaadin Radio Group": {
+    "prefix": "vaadin-radio-group",
+    "body": [
+      "<vaadin-radio-group>",
+      "  <vaadin-radio-button value=\"$1\">$2</vaadin-radio-button>",
+      "  $0",
+      "</vaadin-radio-group>"
+    ],
+    "description": "Vaadin Radio Group"
+  },
+  "Vaadin Split Layout": {
+    "prefix": "vaadin-split-layout",
+    "body": [
+      "<vaadin-split-layout orientation=\"${1|vertical,horizontal|}\">",
+      "  ${2:<div>First element</div>}",
+      "  ${3:<div>Second element</div>}",
+      "</vaadin-split-layout>"
+    ],
+    "description": "Vaadin Split Layout"
+  },
+  "Vaadin Tabs": {
+    "prefix": "vaadin-tabs",
+    "body": [
+      "<vaadin-tabs selected=\"$1\">",
+      "  <vaadin-tab>$2</vaadin-tab>",
+      "  $0",
+      "</vaadin-tabs>"
+    ],
+    "description": "Vaadin Tabs"
+  },
+  "Vaadin Tab": {
+    "prefix": "vaadin-tab",
+    "body": [
+      "<vaadin-tab>$0</vaadin-tab>"
+    ],
+    "description": "Vaadin Tab"
+  },
+  "Vaadin Text Field": {
+    "prefix": "vaadin-text-field",
+    "body": [
+      "<vaadin-text-field placeholder=\"$1\" value=\"{{$2}}\"></vaadin-text-field>"
+    ],
+    "description": "Vaadin Text Field"
+  },
+  "Vaadin Password Field": {
+    "prefix": "vaadin-password-field",
+    "body": [
+      "<vaadin-password-field label=\"${1:Password}\" placeholder=\"${2:Enter password}\" value=\"{{$3}}\"></vaadin-password-field>"
+    ],
+    "description": "Vaadin Password Field"
+  },
+  "Vaadin Text Area": {
+    "prefix": "vaadin-text-area",
+    "body": [
+      "<vaadin-text-area label=\"$1\" placeholder=\"$2\"></vaadin-text-area>",
+      "$0"
+    ],
+    "description": "Vaadin Text Area"
+  },
+  "Vaadin Upload": {
+    "prefix": "vaadin-upload",
+    "body": [
+      "<vaadin-upload target=\"${1:serverUrl}\"></vaadin-upload>"
+    ],
+    "description": "Vaadin Upload"
+  }
+}

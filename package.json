@@ -1,0 +1,19 @@
+{
+  "name": "vaadin-elements-snippets",
+  "displayName": "vaadin-elements-snippets",
+  "description": "Snippets for Vaadin Elements",
+  "version": "0.1.0",
+  "publisher": "mhellber",
+  "engines": {
+    "vscode": "^1.19.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [{
+      "language": "html",
+      "path": "./snippets/snippets.json"
+    }]
+  }
+}
