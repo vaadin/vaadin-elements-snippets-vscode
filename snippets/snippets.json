@@ -114,6 +114,15 @@
     ],
     "description": "Vaadin Grid Column"
   },
+  "Vaadin Grid Tree Toggle": {
+    "prefix": "vaadin-grid-tree-toggle",
+    "body": [
+      "<vaadin-grid-tree-toggle leaf=\"[[$1]]\" expanded=\"{{$2}}\" level=\"[[$3]]\">",
+      "  [[$4]]",
+      "</vaadin-grid-tree-toggle>"
+    ],
+    "description": "Vaadin Grid Tree Toggle"
+  },
   "Vaadin ListBox": {
     "prefix": "vaadin-list-box",
     "body": [
